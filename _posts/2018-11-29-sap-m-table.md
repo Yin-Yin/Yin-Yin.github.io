@@ -1,4 +1,4 @@
-[SAP UI5 Explained]: The sap.m.Table
+SAP UI5 Explained - The sap.m.Table
 
 Tested UI5 version: `1.58.5`
 
@@ -9,7 +9,7 @@ A good overview of the intended usage and some things to consider UX-wise, can b
 
 Let's look at an example on how to use the sap.m.Table:
 
-```
+```html
 <Table id="tableId" inset="false" items="{/PathOfItemsInDataModel/ArrayOfItems}">
     <columns>
         <Column width="12em">
@@ -42,6 +42,7 @@ Let's look at an example on how to use the sap.m.Table:
 [Plunkr with this code](https://next.plnkr.co/plunk/22B8u2)
 
 
+`items` This has to point whether to an EntitiySet
 
 We can have different control types for the cells. The most basic is Text, we can have an [ObjectIdentifier](https://sapui5.hana.ondemand.com/#/api/sap.m.ObjectIdentifier) or a number, which is an [ObjectNumber](https://sapui5.hana.ondemand.com/#/api/sap.m.ObjectNumber).
 
