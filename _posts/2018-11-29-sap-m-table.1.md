@@ -1,5 +1,8 @@
-SAP UI5 Explained - The sap.m.Table
-
+---
+layout: post
+title: "[SAP UI5 Explained]: The sap.m.Table"
+date: 2018-11-28
+---
 Tested UI5 version: `1.58.5`
 
 The sap.m.Table is the standard table in UI5. As with every UI5 control, the most important document is the [API Reference](https://sapui5.hana.ondemand.com/#/api/sap.m.Table).
