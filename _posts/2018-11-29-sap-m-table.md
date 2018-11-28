@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SAP UI5 Explained] The sap.m.Table"
-date: 2018-11-28
+date: 2018-11-29
 ---
 Tested UI5 version: `1.58.5`
 
