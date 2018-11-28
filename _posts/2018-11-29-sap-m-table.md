@@ -4,8 +4,8 @@ title: "[SAP UI5 Explained]: The sap.m.Table"
 date: 2018-11-28
 ---
 Tested UI5 version: `1.58.5`
-
-The sap.m.Table is the standard table in UI5. As with every UI5 control, the most important document is the [API Reference](https://sapui5.hana.ondemand.com/#/api/sap.m.Table).
+[API Reference](https://sapui5.hana.ondemand.com/#/api/sap.m.Table)
+[Sample](https://sapui5.hana.ondemand.com/#/entity/sap.m.Table)
 
 Important to know about this table, is that there are two names that it goes by. The technical name is _sap.ui.Table_, but more often it is referred to as the _"Responsive Table"_, this is important if you for example search for it in the [sample page](https://sapui5.hana.ondemand.com/#/entity/sap.m.Table).
 A good overview of the intended usage and some things to consider UX-wise, can be found in the [design guidelines](https://experience.sap.com/fiori-design-web/responsive-table/).
@@ -15,16 +15,16 @@ Let's look at an example on how to use the sap.m.Table:
 ```html
 <Table id="tableId" inset="false" items="{/PathOfItemsInDataModel/ArrayOfItems}">
     <columns>
-        <Column width="12em">
+        <Column width="12em" minScreenWidth="Tablet" demandPopin="true">
             <Text text="HeadingOfColumn1"/>
         </Column>
-        <Column minScreenWidth="Tablet" demandPopin="true">
+        <Column>
             <Text text="HeadingOfColumn2"/>
         </Column>
-        <Column minScreenWidth="Tablet" demandPopin="true">
+        <Column>
             <Text text="HeadingOfColumn3"/>
         </Column>
-        <Column minScreenWidth="Tablet" demandPopin="true">
+        <Column>
             <Text text="HeadingOfColumn4"/>
         </Column>
     </columns>
@@ -45,7 +45,7 @@ Let's look at an example on how to use the sap.m.Table:
 [Plunkr with this code](https://next.plnkr.co/plunk/22B8u2)
 
 
-`items` This has to point whether to an EntitiySet
+`items` This has to point whether to an EntitiySet (OData Model) or to an Array from a property (JSON Model).
 
 We can have different control types for the cells. The most basic is Text, we can have an [ObjectIdentifier](https://sapui5.hana.ondemand.com/#/api/sap.m.ObjectIdentifier) or a number, which is an [ObjectNumber](https://sapui5.hana.ondemand.com/#/api/sap.m.ObjectNumber).
 
