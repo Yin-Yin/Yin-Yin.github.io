@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[SAP UI5 Explained]: Overview"
+title: "[SAP UI5 Explained] Overview"
 date: 2018-11-28
 ---
 ## Motivation 
