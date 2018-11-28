@@ -4,7 +4,9 @@ title: "[SAP UI5 Explained] The sap.m.Table"
 date: 2018-11-28
 ---
 Tested UI5 version: `1.58.5`
+
 [API Reference](https://sapui5.hana.ondemand.com/#/api/sap.m.Table)
+
 [Sample](https://sapui5.hana.ondemand.com/#/entity/sap.m.Table)
 
 Important to know about this table, is that there are two names that it goes by. The technical name is _sap.ui.Table_, but more often it is referred to as the _"Responsive Table"_, this is important if you for example search for it in the [sample page](https://sapui5.hana.ondemand.com/#/entity/sap.m.Table).
