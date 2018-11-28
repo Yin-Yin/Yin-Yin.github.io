@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## My Blog...
 
 Repository of this blog: [yin-yin.github.io](https://yin-yin.github.io/).
 

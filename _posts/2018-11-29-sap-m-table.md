@@ -1,0 +1,53 @@
+[SAP UI5 Explained]: The sap.m.Table
+
+Tested UI5 version: `1.58.5`
+
+The sap.m.Table is the standard table in UI5. As with every UI5 control, the most important document is the [API Reference](https://sapui5.hana.ondemand.com/#/api/sap.m.Table).
+
+Important to know about this table, is that there are two names that it goes by. The technical name is _sap.ui.Table_, but more often it is referred to as the _"Responsive Table"_, this is important if you for example search for it in the [sample page](https://sapui5.hana.ondemand.com/#/entity/sap.m.Table).
+A good overview of the intended usage and some things to consider UX-wise, can be found in the [design guidelines](https://experience.sap.com/fiori-design-web/responsive-table/).
+
+Let's look at an example on how to use the sap.m.Table:
+
+```
+<Table id="tableId" inset="false" items="{/PathOfItemsInDataModel/ArrayOfItems}">
+    <columns>
+        <Column width="12em">
+            <Text text="HeadingOfColumn1"/>
+        </Column>
+        <Column minScreenWidth="Tablet" demandPopin="true">
+            <Text text="HeadingOfColumn2"/>
+        </Column>
+        <Column minScreenWidth="Tablet" demandPopin="true">
+            <Text text="HeadingOfColumn3"/>
+        </Column>
+        <Column minScreenWidth="Tablet" demandPopin="true">
+            <Text text="HeadingOfColumn4"/>
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{PropertyInItemOfDataModel}"/>
+                <Text text="{PropertyInItemOfDataModel}"/>
+                <Text text="{PropertyInItemOfDataMode2}"/>
+                <ObjectNumber
+                  number="{PropertyInItemOfDataModeThatIsANumber}"
+                  unit="{PropertyInItemOfDataModeThatIsTheUnit}" />
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+```
+[Plunkr with this code](https://next.plnkr.co/plunk/22B8u2)
+
+
+
+We can have different control types for the cells. The most basic is Text, we can have an [ObjectIdentifier](https://sapui5.hana.ondemand.com/#/api/sap.m.ObjectIdentifier) or a number, which is an [ObjectNumber](https://sapui5.hana.ondemand.com/#/api/sap.m.ObjectNumber).
+
+#### Comparison to the sap.ui.Table
+The biggest difference to the sap.ui.Table we can observe right away is, that we do not have the rows as text in the columns (as in the sap.ui.Table), but we have two separate aggregations: one is the columns, where we define the behaviour (for example if it is displayed on first load), look (for example width) and the title of the column. Separately we define the cells, where we define what is displayed in the rows of the table.
+
+You can find another tutorial [here](https://sapui5.hana.ondemand.com/1.36.6/docs/guide/d3234bc1b7b64af99a3d6990039f7eed.html) (although it seems to refer to UI5-version 1.36.6, which might be outdated soon/already).
+Something more about [responsiveness](https://openui5.hana.ondemand.com/1.36.5/docs/guide/a96e18b4cd924196b255eb9623431dbb.html).
+
