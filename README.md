@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Yin-Yin/Yin-Yin.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Repository of this blog: [yin-yin.github.io](https://yin-yin.github.io/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I left the standard guide for now, as it is quite helpful at the moment: 
 
 ### Markdown
 
